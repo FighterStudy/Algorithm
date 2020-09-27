@@ -4,6 +4,7 @@
 
 void Main()
 {
+   //283 https://leetcode-cn.com/problems/move-zeroes/
     Method2();
 }
 
@@ -22,8 +23,10 @@ void Method1(){
 	data.Dump();
 }
 
+
+
 void Method2(){
-    //283 https://leetcode-cn.com/problems/move-zeroes/
+   
 	int[] data = new int[]{0,1,0,3,12};
 	int j = 0;
 	int temp = 0;
@@ -38,4 +41,7 @@ void Method2(){
 }
 
 // j表示为非0元素的位置
+
+// others:
+// 1. new array
 
