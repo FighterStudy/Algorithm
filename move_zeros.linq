@@ -4,7 +4,8 @@
 
 void Main()
 {
-    //https://leetcode-cn.com/problems/move-zeroes/
+
+    //283 https://leetcode-cn.com/problems/move-zeroes/
 	int[] data = new int[]{0,1,0,3,12};
 	int j = 0;
 	for(int i =0; i<data.Length; i++){
