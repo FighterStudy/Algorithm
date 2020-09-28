@@ -10,7 +10,6 @@ void Main()
 // Define other methods, classes and namespaces here
 
 
-//https://leetcode-cn.com/problems/climbing-stairs/
 /*
 懵逼的时候
 暴力？ 基本情况？

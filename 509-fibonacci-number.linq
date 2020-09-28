@@ -2,11 +2,11 @@
 
 void Main()
 {
-
+    Int64.MaxValue.Dump();
 	Fib(4).Dump();//3
 }
 
-// Define other methods, classes and namespaces here
+
 // 65
  public int Fib1(int N) {
       if(N<=1) return N;
@@ -34,3 +34,7 @@ public int Fib2(int N){
 	 if(N<=1) return N;
 	 return Fib2(N-1) + Fib2(N-2);
 }
+
+// 另外：https://leetcode-cn.com/problems/fei-bo-na-qi-shu-lie-lcof/
+
+

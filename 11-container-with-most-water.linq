@@ -8,14 +8,14 @@ void Main()
 
 
 /*
-一维数组的坐标变换 i , j (283 move-zeroes:https://leetcode-cn.com/problems/move-zeroes/)
+一维数组的坐标变换 i , j (283 move-zeroes)
 
 1. 枚举： left bar, right bar, (x-y)*height_diff  O(n^2)
 2. O(n) 左右边界 i, j 向中间收敛 左右夹逼
 上面两种方法代码要滚瓜烂熟
 */
 
-// https://leetcode-cn.com/problems/container-with-most-water
+
 // 26
  public int MaxArea(int[] height) {
     int max = 0;

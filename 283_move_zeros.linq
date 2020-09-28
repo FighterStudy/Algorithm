@@ -4,7 +4,6 @@
 
 void Main()
 {
-   //283 https://leetcode-cn.com/problems/move-zeroes/
     Method2();
 }
 
