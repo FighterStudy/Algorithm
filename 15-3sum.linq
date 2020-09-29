@@ -28,8 +28,10 @@ public IList<IList<int>> ThreeSum(int[] nums) {
 public static IList<IList<int>> ThreeSum3(int[] nums)
 {
     IList<IList<int>> ret = new List<IList<int>>();
+	// Sort 要放在前面，数组这个Sort方法不常用，没想起来。
     Array.Sort(nums);
-    if (nums.Count() == 0 || nums[0] > 0)
+	// 数据检查工作还是要做的
+    if (nums == null ||nums.Count() == 0 || nums[0] > 0)
         return ret;
     for (int i = 0; i < nums.Length - 2; i++)
     {
@@ -43,6 +45,7 @@ public static IList<IList<int>> ThreeSum3(int[] nums)
                 if (nums[right] + nums[left] == sum)
                 {
                     ret.Add(new List<int>() { nums[i], nums[left], nums[right] });
+					// left < right left++ 要满足的条件
                     while (left < right && nums[left] == nums[left + 1]) left++;
                     while (left < right && nums[right] == nums[right - 1]) right--;
                     left++;
