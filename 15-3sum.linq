@@ -2,7 +2,7 @@
 
 void Main()
 {
-	ThreeSum(new int[]{-1, 0, 1, 2, -1, -4}).Dump();
+	ThreeSum3(new int[]{-1, 0, 1, 2, -1, -4}).Dump();
 }
 
 
@@ -24,8 +24,39 @@ public IList<IList<int>> ThreeSum(int[] nums) {
  // 2. Hash表
  
  
- // 3. 双支针 O(n^2)
- 
+ // 3. 双支针 O(n^2)  98
+public static IList<IList<int>> ThreeSum3(int[] nums)
+{
+    IList<IList<int>> ret = new List<IList<int>>();
+    Array.Sort(nums);
+    if (nums.Count() == 0 || nums[0] > 0)
+        return ret;
+    for (int i = 0; i < nums.Length - 2; i++)
+    {
+        if (i == 0 || i > 0 && nums[i] != nums[i - 1])
+        {
+            int left = i + 1;
+            int right = nums.Length - 1;
+            int sum = -nums[i];
+            while (left < right)
+            {
+                if (nums[right] + nums[left] == sum)
+                {
+                    ret.Add(new List<int>() { nums[i], nums[left], nums[right] });
+                    while (left < right && nums[left] == nums[left + 1]) left++;
+                    while (left < right && nums[right] == nums[right - 1]) right--;
+                    left++;
+                    right--;
+                }
+                else if (nums[right] + nums[left] > sum)
+                    right--;
+                else
+                    left++;
+            }
+        }
+    }
+    return ret;
+}
  
  
  

@@ -7,7 +7,7 @@ void Main()
 	TwoSum1(new int[]{2,5,5,11},10).Dump();
 }
 
-//64 loop
+//64 暴力法
 public int[] TwoSum(int[] nums, int target) {
     int[] data = new int[2];
 	for(int i = 0; i < nums.Length-1; i++){
@@ -24,7 +24,7 @@ public int[] TwoSum(int[] nums, int target) {
 	return new int[0];
 }
 
-//78
+//78 Hashmap
 public int[] TwoSum1(int[] nums, int target) {
     Dictionary<int, int> data = new Dictionary<int, int>();
 	int[] ret = new int[2];
@@ -41,4 +41,4 @@ public int[] TwoSum1(int[] nums, int target) {
 	return new int[0];
 }
 
-// 英文网站 使用左右夹逼 更佳: 98.85%，分析了各个步骤的复杂度=》复杂度分析很重要，完成题解只是50%
+// 国际网站 使用左右夹逼 更佳: 98.85%，分析了各个步骤的复杂度=》复杂度分析很重要，完成题解只是50%
