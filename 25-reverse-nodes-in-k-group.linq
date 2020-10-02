@@ -9,21 +9,30 @@ void Main()
 
 // Define other methods, classes and namespaces here
 
-public ListNode ReverseKGroup(ListNode head, int k){
-	ListNode prev = null;
-	ListNode curr = head;
-	ListNode next = null;
-	int count = k-1;
-	while(curr != null && count>=0){
-		if(curr == null)
-			return head;
-		next = curr.next;
-		curr.next = prev;
-		prev = curr;
-		curr  = curr.next;
-		curr.next = ReverseKGroup(curr.next, k);
-	}
-	return prev;	
+public ListNode ReverseKGroup(ListNode head, int k) {
+      
+      int count = k;
+	  ListNode curr = head;
+	  while(curr != null && count>0){
+	  	 curr = curr.next;
+		 count--;
+	  }
+	  
+	  if(count == 0){
+	      curr = ReverseKGroup(curr, k);
+	  	  count = k;
+		  while(count>0){
+		    
+		  	ListNode temp = head.next;
+			head.next = curr;
+			curr = head;
+			head = temp;
+		  	count--;
+		  }
+		  head = curr;
+	  }
+	  
+	  return head;
 }
 
 
