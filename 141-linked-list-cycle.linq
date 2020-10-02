@@ -2,18 +2,7 @@
 
 void Main()
 {
-	int[] data = new int[]{3,2,0,-4};
-	int pos = 1;
-	ListNode head = null;
-	foreach(var x in data){
-	    if(head == null)
-		    head = new ListNode(x);
-		else 
-		{
-			head.next = new ListNode(x);
-			head = head.next;
-		}
-	}
+	
 }
 
 // Define other methods, classes and namespaces here  O(n)  84
@@ -23,7 +12,7 @@ public bool HasCycle(ListNode head) {
 	ListNode fast = head.next;
 	ListNode slow = head;
 	while(fast != slow){
-	 	if(fast == null || fast.next == null)
+	 	if(fast == null || fast.next == null)// attention
 			return false;
 		fast = fast.next.next;
 		slow = slow.next;

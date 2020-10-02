@@ -24,6 +24,25 @@ public ListNode SwapPairs(ListNode head) {
  return pre.next;
 }
 
+//public ListNode swapPairs(ListNode head) {
+//    ListNode prev =new ListNode(0);
+//    prev.next = head;
+//    prev = change(prev);
+//    return prev.next;
+//}
+//
+//public ListNode change(ListNode head){
+//    if(head == null || head.next == null || head.next.next == null)
+//        return head;
+//    ListNode start = head.next;
+//    ListNode end = head.next.next;
+//    head.next = end;
+//    start.next = end.next;
+//    end.next = start;
+//    start = change(start);
+//    return head;
+//}
+
 public class ListNode {
     public int val;
     public ListNode next;
@@ -31,7 +50,7 @@ public class ListNode {
 }
 
 
-// 递归 65 其实差不多
+// 递归 65 
 public ListNode SwapPairs1(ListNode head) {
      if(head == null || head.next == null)
 	    return head;
