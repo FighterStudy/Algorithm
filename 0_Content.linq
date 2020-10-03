@@ -8,24 +8,24 @@
 /*
 第三课
 Array 实战题目
-https://leetcode-cn.com/problems/container-with-most-water/
-https://leetcode-cn.com/problems/move-zeroes/
-https://leetcode.com/problems/climbing-stairs/
-https://leetcode-cn.com/problems/3sum/ (高频老题）
+https://leetcode-cn.com/problems/container-with-most-water/  11
+https://leetcode-cn.com/problems/move-zeroes/   283
+https://leetcode.com/problems/climbing-stairs/  70 
+https://leetcode-cn.com/problems/3sum/ (高频老题）  15
 Linked List 实战题目
-https://leetcode-cn.com/problems/reverse-linked-list/
-https://leetcode-cn.com/problems/swap-nodes-in-pairs
-https://leetcode-cn.com/problems/linked-list-cycle                                            $$$$ 思维上的巧妙
-https://leetcode-cn.com/problems/linked-list-cycle-ii
-https://leetcode-cn.com/problems/reverse-nodes-in-k-group/
+https://leetcode-cn.com/problems/reverse-linked-list/  206
+https://leetcode-cn.com/problems/swap-nodes-in-pairs  24
+https://leetcode-cn.com/problems/linked-list-cycle         141                                    $$$$ 思维上的巧妙
+https://leetcode-cn.com/problems/linked-list-cycle-ii  142
+https://leetcode-cn.com/problems/reverse-nodes-in-k-group/  25
 课后作业
-https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/
-https://leetcode-cn.com/problems/rotate-array/
-https://leetcode-cn.com/problems/merge-two-sorted-lists/
-https://leetcode-cn.com/problems/merge-sorted-array/
-https://leetcode-cn.com/problems/two-sum/
-https://leetcode-cn.com/problems/move-zeroes/
-https://leetcode-cn.com/problems/plus-one/
+https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/        26
+https://leetcode-cn.com/problems/rotate-array/         189
+https://leetcode-cn.com/problems/merge-two-sorted-lists/  21
+https://leetcode-cn.com/problems/merge-sorted-array/  88 
+https://leetcode-cn.com/problems/two-sum/    1
+https://leetcode-cn.com/problems/move-zeroes/   283
+https://leetcode-cn.com/problems/plus-one/    66
 
 
 
