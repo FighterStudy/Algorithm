@@ -94,4 +94,7 @@ class MinStack1
         }
     }
 }
+
+// one stack
+
  
