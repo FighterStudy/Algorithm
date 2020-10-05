@@ -32,16 +32,17 @@ https://leetcode-cn.com/problems/plus-one/    66
 第四课
 预习题目
 •	https://leetcode-cn.com/problems/valid-parentheses/  20
-•	https://leetcode-cn.com/problems/min-stack/
+•	https://leetcode-cn.com/problems/min-stack/ 115
 实战题目
-•	https://leetcode-cn.com/problems/largest-rectangle-in-histogram
-•	https://leetcode-cn.com/problems/sliding-window-maximum
+•	https://leetcode-cn.com/problems/largest-rectangle-in-histogram      84
+•	https://leetcode-cn.com/problems/sliding-window-maximum     239
 课后作业
 •	用 add first 或 add last 这套新的 API 改写 Deque 的代码
 •	分析 Queue 和 Priority Queue 的源码
-•	https://leetcode.com/problems/design-circular-deque
-•	https://leetcode.com/problems/trapping-rain-water/
+•	https://leetcode.com/problems/design-circular-deque    641
+•	https://leetcode.com/problems/trapping-rain-water/      42
 说明：改写代码和分析源码这两项作业，同学们需要在第 1 周的学习总结中完成。如果不熟悉 Java 语言，这两项作业可选做。
+
 
 
 */
