@@ -6,7 +6,7 @@
 // 时间复杂度分析
 
 /*
-第三课
+第三课 数组-链表-跳表
 Array 实战题目
 https://leetcode-cn.com/problems/container-with-most-water/  11
 https://leetcode-cn.com/problems/move-zeroes/   283
@@ -29,7 +29,7 @@ https://leetcode-cn.com/problems/plus-one/    66
 
 
 
-第四课
+第四课 栈-队列-优先队列-双端队列
 预习题目
 •	https://leetcode-cn.com/problems/valid-parentheses/  20
 •	https://leetcode-cn.com/problems/min-stack/ 115
@@ -45,7 +45,7 @@ https://leetcode-cn.com/problems/plus-one/    66
 
 
 
-第五课
+第五课 哈希表-映射-集合 
 参考链接
 •	Java Set 文档（https://docs.oracle.com/en/java/javase/12/docs/api/java.base/java/util/Set.html）
 •	Java Map 文档（https://docs.oracle.com/en/java/javase/12/docs/api/java.base/java/util/Map.html）
