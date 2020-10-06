@@ -45,4 +45,21 @@ https://leetcode-cn.com/problems/plus-one/    66
 
 
 
+第五课
+参考链接
+•	Java Set 文档（https://docs.oracle.com/en/java/javase/12/docs/api/java.base/java/util/Set.html）
+•	Java Map 文档（https://docs.oracle.com/en/java/javase/12/docs/api/java.base/java/util/Map.html）
+课后作业
+写一个关于 HashMap 的小总结。
+说明：对于不熟悉 Java 语言的同学，此项作业可选做。
+
+
+实战题目 / 课后作业
+•	https://leetcode-cn.com/problems/valid-anagram/description/
+•	https://leetcode-cn.com/problems/group-anagrams/
+•	https://leetcode-cn.com/problems/two-sum/description/
+参考链接
+•	养成收藏精选代码的习惯（示例）（https://shimo.im/docs/R6g9WJV89QkHrDhr/read）
+
 */
+
