@@ -61,5 +61,21 @@ https://leetcode-cn.com/problems/plus-one/    66
 参考链接
 •	养成收藏精选代码的习惯（示例）（https://shimo.im/docs/R6g9WJV89QkHrDhr/read）
 
+
+第六课 树-二叉树-二叉搜索树
+参考链接
+•	二叉搜索树 Demo（https://visualgo.net/zh/bst）
+思考题
+树的面试题解法一般都是递归，为什么？
+说明：同学们可以将自己的思考写在课程下方的留言区一起讨论，也可以写在第 2 周的学习总结中。
+
+
+实战题目 / 课后作业
+•	https://leetcode-cn.com/problems/binary-tree-inorder-traversal/      94
+•	https://leetcode-cn.com/problems/binary-tree-preorder-traversal/     114
+•	https://leetcode-cn.com/problems/n-ary-tree-postorder-traversal/     590
+•	https://leetcode-cn.com/problems/n-ary-tree-preorder-traversal/      589
+•	https://leetcode-cn.com/problems/n-ary-tree-level-order-traversal/    429
+
 */
 
