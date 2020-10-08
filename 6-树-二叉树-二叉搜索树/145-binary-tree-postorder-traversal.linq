@@ -18,7 +18,7 @@ public class TreeNode {
     }
 }
 
-// 61
+// 61 递归
 public class Solution
 {
     public IList<int> PostorderTraversal(TreeNode root)
@@ -39,7 +39,7 @@ public class Solution
     }
 }
 
-//75
+//75 迭代模拟递归
 public class Solution1 {
 	public IList<int> PostorderTraversal(TreeNode root) {
 	    IList<int> ret = new List<int>();
@@ -80,6 +80,7 @@ public class Solution1 {
 	}
 }
 //https://leetcode-cn.com/problems/binary-tree-postorder-traversal/solution/er-cha-shu-qian-xu-zhong-xu-hou-xu-ceng-xu-bian-2/
+//86  递归
 class Solution3 {
     public List<int> PostorderTraversal(TreeNode root)
     {
@@ -98,6 +99,27 @@ class Solution3 {
         }
         return res.ToList();
     }
+}
+
+// 有问题
+public List<int> PostorderTraversal(TreeNode root)
+{
+    if (root == null)
+        return new List<int>();
+    IList<int> fakeData = new List<int>();
+    Stack<TreeNode> stack = new Stack<TreeNode>();
+    stack.Push(root);
+    while (stack.Count != 0)
+    {
+        TreeNode node = stack.Pop();
+        fakeData.Add(node.val);
+        if (node.right != null)
+            stack.Push(node.right);
+
+        if (node.left != null)
+            stack.Push(node.left);
+    }
+    return fakeData.Reverse().ToList();
 }
 
 
