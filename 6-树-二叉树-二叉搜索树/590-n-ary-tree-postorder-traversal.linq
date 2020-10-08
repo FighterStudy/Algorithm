@@ -50,7 +50,7 @@ public class Solution
     }
 }
 
- // 迭代   84     [V11,V12,V13]  V1 [V21,V22,V23] V2 [V31,V32,V33] V3  R
+ // 迭代   84  [V11,V12,V13]  V1 [V21,V22,V23] V2 [V31,V32,V33] V3  R
 public class Solution1
 {
     public IList<int> Postorder(Node root)
@@ -85,9 +85,7 @@ class Solution2
         Stack<Node> stack = new Stack<Node>();
         LinkedList<int> output = new LinkedList<int>();
         if (root == null)
-        {
             return output.ToList();
-        }
 
         stack.Push(root);
         while (stack.Count != 0)

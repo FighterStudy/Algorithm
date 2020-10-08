@@ -50,7 +50,7 @@ public class Solution
     }
 }
 
-// 迭代   84
+// 迭代   84   R V1 [V11,V12,V13] V2[V21,V22,V23] V3[V31,V32,V33]
 public class Solution1
 {
     public IList<int> Preorder(Node root)
