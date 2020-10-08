@@ -7,7 +7,6 @@ void Main()
 	
 }
 
-
 public class TreeNode {
     public int val;
     public TreeNode left;
@@ -19,27 +18,30 @@ public class TreeNode {
     }
 }
 
-// 递归 time space O(n)
-public IList<int> InorderTraversal(TreeNode root)
+// 61
+public class Solution
 {
-    IList<int> ret = new List<int>();
-    Inorder(ret, root);
-    return ret;
-}
-
-public void Inorder(IList<int> ret, TreeNode root)
-{
-    if (root != null)
+    public IList<int> PostorderTraversal(TreeNode root)
     {
-        Inorder(ret, root.left);
-        ret.Add(root.val);
-        Inorder(ret, root.right);
+        IList<int> ret = new List<int>();
+        Postorder(ret, root);
+        return ret;
+    }
+
+    public void Postorder(IList<int> ret, TreeNode root)
+    {
+        if (root != null)
+        {
+            Postorder(ret, root.left);
+            Postorder(ret, root.right);
+            ret.Add(root.val);
+        }
     }
 }
 
-// https://leetcode-cn.com/problems/binary-tree-inorder-traversal/solution/yan-se-biao-ji-fa-yi-chong-tong-yong-qie-jian-ming/
-public class Solution {
-	public IList<int> InorderTraversal(TreeNode root) {
+//75
+public class Solution1 {
+	public IList<int> PostorderTraversal(TreeNode root) {
 	    IList<int> ret = new List<int>();
 	        Stack<ColorTreeNode> stack = new Stack<ColorTreeNode>();
 	        stack.Push(new ColorTreeNode() { Node = root, Color= NodeColor.White});
@@ -54,8 +56,8 @@ public class Solution {
 	                continue;
 	            if (color == NodeColor.White)
 	            {
+				    stack.Push(new ColorTreeNode() { Node = node, Color = NodeColor.Gray });
 	                stack.Push(new ColorTreeNode() { Node = node.right, Color = NodeColor.White });
-	                stack.Push(new ColorTreeNode() { Node = node, Color = NodeColor.Gray });
 	                stack.Push(new ColorTreeNode() { Node = node.left, Color = NodeColor.White });
 	            }
 	            else {
@@ -77,25 +79,27 @@ public class Solution {
 	    Gray
 	}
 }
-
-//https://alchemist-al.com/algorithms/binary-tree-inorder-traversal
-// 栈与迭代 更快一些  time space ：On
-public class Solution1{
-	public IList<int> InorderTraversal(TreeNode root)
-	{
-	    IList<int> ret = new List<int>();
-	    Stack<TreeNode> stack = new Stack<TreeNode>();
-	    while (root != null|| stack.Count != 0)
-	    {
-	        while (root != null) { // while  
-	            stack.Push(root);  //不断将该节点左子树入栈
-	            root = root.left;
-	        }
-	
-	        root = stack.Pop(); //栈顶节点出栈
-	        ret.Add(root.val);   //将节点加入结果队列
-	        root = root.right; //转向该节点右子树的左子树（下一个循环）
-	    }
-	    return ret;
-	}
+//https://leetcode-cn.com/problems/binary-tree-postorder-traversal/solution/er-cha-shu-qian-xu-zhong-xu-hou-xu-ceng-xu-bian-2/
+class Solution3 {
+    public List<int> PostorderTraversal(TreeNode root)
+    {
+        LinkedList<int> res = new LinkedList<int>();
+        Stack<TreeNode> stack = new Stack<TreeNode>();
+        while (root != null || stack.Count != 0)
+        {
+            while (root != null)
+            {
+                res.AddFirst(root.val); //插入队首
+                stack.Push(root);
+                root = root.right; //先右后左
+            }
+            root = stack.Pop();
+            root = root.left;
+        }
+        return res.ToList();
+    }
 }
+
+
+
+
