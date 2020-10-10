@@ -82,23 +82,57 @@ https://leetcode-cn.com/problems/plus-one/    66
 参考链接
 •	递归代码模板(https://shimo.im/docs/DjqqGCT3xqDYwPyY/read)
 
+// Python
+def recursion(level, param1, param2, ...): 
+    # recursion terminator 
+    if level > MAX_LEVEL: 
+	   process_result 
+	   return 
+    # process logic in current level 
+    process(level, data...) 
+    # drill down 
+    self.recursion(level + 1, p1, ...) 
+    # reverse the current level status if needed
+	
+	
+// Java
+public void recur(int level, int param) { 
+  // terminator  递归中止条件
+  if (level > MAX_LEVEL) { 
+    // process result 
+    return; 
+  }
 
+  // process current logic 处理当前逻辑
+  process(level, param); 
+
+  // drill down 下探到下一层
+  recur( level: level + 1, newParam); 
+
+  // restore current status 清理当前层，全局变量...
+ }
+ 
+思维要点：
+1. 不要进行人肉递归（）
+2. 找到最近最简方法，将其拆解成可重复解决的问题（重复子问题） 
+3. 数学归纳法
 实战题目
-•	https://leetcode-cn.com/problems/climbing-stairs/
-•	https://leetcode-cn.com/problems/generate-parentheses/
-•	https://leetcode-cn.com/problems/invert-binary-tree/description/
-•	https://leetcode-cn.com/problems/validate-binary-search-tree
-•	https://leetcode-cn.com/problems/maximum-depth-of-binary-tree
-•	https://leetcode-cn.com/problems/minimum-depth-of-binary-tree
-•	https://leetcode-cn.com/problems/serialize-and-deserialize-binary-tree/
-每日一课
+•	https://leetcode-cn.com/problems/climbing-stairs/     70
+•	https://leetcode-cn.com/problems/generate-parentheses/    22 
+•	https://leetcode-cn.com/problems/invert-binary-tree/description/   226
+•	https://leetcode-cn.com/problems/validate-binary-search-tree   98
+•	https://leetcode-cn.com/problems/maximum-depth-of-binary-tree   104
+•	https://leetcode-cn.com/problems/minimum-depth-of-binary-tree  111
+•	https://leetcode-cn.com/problems/serialize-and-deserialize-binary-tree/   297
+   每日一课
 •	如何优雅地计算斐波那契数列(https://time.geekbang.org/dailylesson/detail/100028406)
 课后作业
-•	https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/
-•	https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal
-•	https://leetcode-cn.com/problems/combinations/
+•	https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/    236
+•	https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal    105
+•	https://leetcode-cn.com/problems/combinations/   77
 •	https://leetcode-cn.com/problems/permutations/
 •	https://leetcode-cn.com/problems/permutations-ii/
 
+def recursion
 */
 
