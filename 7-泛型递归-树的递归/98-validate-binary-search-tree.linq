@@ -60,7 +60,7 @@ public class Solution
 */
 
 
-// 中序遍历
+// 中序遍历=》中序遍历是递增的
 public class Solution1
 {
     public bool IsValidBST(TreeNode root)
