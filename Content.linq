@@ -123,7 +123,7 @@ public void recur(int level, int param) {
 •	https://leetcode-cn.com/problems/validate-binary-search-tree   98
 •	https://leetcode-cn.com/problems/maximum-depth-of-binary-tree   104
 •	https://leetcode-cn.com/problems/minimum-depth-of-binary-tree  111
-•	https://leetcode-cn.com/problems/serialize-and-deserialize-binary-tree/   297
+•	https://leetcode-cn.com/problems/serialize-and-deserialize-binary-tree/   297  到这里，广度优先和深度优先没有看
    每日一课
 •	如何优雅地计算斐波那契数列(https://time.geekbang.org/dailylesson/detail/100028406)
 课后作业
@@ -133,6 +133,6 @@ public void recur(int level, int param) {
 •	https://leetcode-cn.com/problems/permutations/
 •	https://leetcode-cn.com/problems/permutations-ii/
 
-def recursion
+
 */
 

@@ -7,6 +7,14 @@ void Main()
 	
 }
 
+
+/*
+测试用例
+[3,9,20,null,null,15,7]
+[1,2,3,4,null,null,5]
+[]
+*/
+
 public class TreeNode
 {
     public int val;
