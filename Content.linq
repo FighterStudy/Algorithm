@@ -134,5 +134,23 @@ public void recur(int level, int param) {
 •	https://leetcode-cn.com/problems/permutations-ii/
 
 
+8-分治-回溯
+参考链接
+•	分治代码模板  https://shimo.im/docs/3xvghYh3JJPKwdvt/read
+•	括号生成问题  https://shimo.im/docs/3xvghYh3JJPKwdvt/read
+
+预习题目
+•	https://leetcode-cn.com/problems/powx-n/
+•	https://leetcode-cn.com/problems/subsets/
+参考链接
+•	牛顿迭代法原理  http://www.matrix67.com/blog/archives/361
+•	牛顿迭代法代码  http://www.voidcn.com/article/p-eudisdmk-zm.html
+
+实战题目
+•	https://leetcode-cn.com/problems/majority-element/description/ （简单、但是高频）
+•	https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number/
+•	https://leetcode-cn.com/problems/n-queens/
+
+
 */
 
