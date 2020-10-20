@@ -15,7 +15,6 @@ void Main()
 }
 
 
-
 // 方法1：合并后排序 时间复杂度：O((n+m)log(n+m)) 空间复杂度：O(1)
 public class Solution {
     public void Merge(int[] nums1, int m, int[] nums2, int n) {
@@ -39,7 +38,6 @@ public class Solution1 {
         }
         // 表示将nums2数组从下标0位置开始，拷贝到nums1数组中，从下标0位置开始，长度为len2+1
         Array.Copy(nums2, 0, nums1, 0, len2 + 1);
-       
     }
 }
 
@@ -49,4 +47,5 @@ public class Solution1 {
 nums1.length == m + n
 nums2.length == n
 所以双指针法，尽管把nums2中余下的数字复制到nums1中，另外，如果nums2不剩下元素了，len2则为-1， -1+1为0，复制元素为0个。
+方法1不涉及排序，比0方法快很多。
 */
