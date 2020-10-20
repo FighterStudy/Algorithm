@@ -14,6 +14,8 @@ void Main()
 	 
 }
 
+
+
 // 方法1：合并后排序 时间复杂度：O((n+m)log(n+m)) 空间复杂度：O(1)
 public class Solution {
     public void Merge(int[] nums1, int m, int[] nums2, int n) {
@@ -40,3 +42,11 @@ public class Solution1 {
        
     }
 }
+
+
+/*
+这道题的提示：
+nums1.length == m + n
+nums2.length == n
+所以双指针法，尽管把nums2中余下的数字复制到nums1中，另外，如果nums2不剩下元素了，len2则为-1， -1+1为0，复制元素为0个。
+*/
